@@ -1,0 +1,40 @@
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 5rem;
+  }
+  
+  /* Navbar links 
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+*/
+/* Links - change color on hover 
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+*/
+
+.topnav button {
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    padding-top: 0px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 2.5rem;
+    transition: 0.3s;
+    line-height: 5rem; 
+}
+
+.topnav button:hover {    
+    font-size: 3.5rem;    
+}

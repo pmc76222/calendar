@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+</head>
+<body>
+    <header class="header">
+        <h1>header</h1>
+        <p>Posted by Gomin</p>
+    </header>
+
+    <div class="topnav">
+        <button class="">📻</button>         
+        <button class="memo">📝</button>                     
+        <button class="">💡</button>        
+        <button class="">🌡</button>        
+        <button class="">🚬</button>        
+        <button class="">📈</button>        
+        <button class="">🔭</button>
+    </div>
+    
+    <div class="grid-container">
+
+        <div class="item1">
+            <div class="log">Log</div>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a to do and Press or Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div class="item2">
+            <div class="header">                
+                <div class="btn prevDay"></div>
+                <h2 class='dateTitle'></h2>
+                <div class="btn nextDay"></div>              
+             </div>
+            <div class="grid">
+                <div>알반 에일레르</div>
+                <div>벨테인</div>
+                <div>알반 헤루인</div>
+                <div>루나사</div>
+                <div>알반 엘베드</div>
+                <div>샴하인</div>
+                <div>임볼릭</div>
+            </div>            
+            <div class="grid-dateBoard"> 
+            </div>
+            
+        </div>
+        <div class="item3">3
+            <div id="weather">
+                <span></span>
+                <span id="temp"></span>
+                <span></span>
+            </div>
+            <div id="stock">
+                <span></span>
+                <span id="basDt"></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="item4">4</div>
+     </div>   
+    <!--  -->
+        <footer class="footer">
+        <p>Footer</p>
+    </footer>
+    
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+    <script src="js/calendar.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/fetch.js"></script>
+    
+</body>
+</html>
