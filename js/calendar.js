@@ -61,13 +61,32 @@ theDay[date-1].classList.add('today');
 
 const clicked = document.querySelectorAll('.day');
 let log = document.querySelector('.log');  
-log.innerHTML = `${year}.${month+1}.${date}`;
+log.innerHTML = `<div id='year'>${year}</div>                
+                <div id ='month'>${month+1}.${date}</div>
+                <hr />`;
 //날짜배열에foreach로 이벤트리스너 달기
 clicked.forEach((x) => {x.addEventListener('click', () => {
     log.innerHTML = `${x.id}`;       
   })});
 
-  
+
+
+const clock = document.querySelector('#clock');
+
+function getClock() {
+    const date = new Date();
+    let hours = date.getHours();
+    let h = hours < 12 ? "am" : "pm";
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    hours = String(hours).padStart(2,'0');
+    const minutes = String(date.getMinutes()).padStart(2,'0');       
+
+    clock.innerHTML = `${hours}<span class="colon">:</span>${minutes} ${h}`;
+}
+
+getClock();
+setInterval(getClock, 1000);
 /*
 getFullYear()	Get year as a four digit number (yyyy)
 getMonth()	Get month as a number (0-11)

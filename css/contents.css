@@ -17,13 +17,28 @@
   text-align: center;
   }
 
+hr {
+  width : 70%;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+.colon {
+  animation: blink-effect 1s step-end infinite;
+}
   input {        
     height:1.5rem;
     font-size:1.5rem;
   }
 
 .item2 {  }
-.item3 {  }
+.item3 { 
+  font-size: 1.4rem;
+  text-align: center; }
 .item4 {  }
   
 .grid {
